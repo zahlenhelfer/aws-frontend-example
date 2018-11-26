@@ -6,6 +6,9 @@ addons:
     organization: "$ORG_KEY"
     token:
       secure: "$SONAR_TOKEN"
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
