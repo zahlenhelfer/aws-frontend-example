@@ -8,5 +8,6 @@ deploy:
   bucket: $S3_BUCKET
   region: eu-central-1
   skip_cleanup: true
+  local_dir: static
   on:
     branch: master
